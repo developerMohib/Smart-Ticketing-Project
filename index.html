@@ -156,7 +156,7 @@
                 <div class="busName col-span-3">
                     <div class="name-seat lg:flex justify-between items-center">
                         <h1 class="text-3xl font-bold">Biman Paribahan</h1>
-                        <p class="bg-[#1cd1003d] text-primaryColor font-bold border border-primaryColor rounded-xl p-2"> <span class="newLeft" >40</span> Seat left </p> 
+                        <p class="bg-[#1cd1003d] text-primaryColor font-bold border border-primaryColor rounded-xl p-2"> <span class="" >40</span> Seat left </p> 
                     </div>
     
                     <div class="route-place lg:px-0 px-2 flex justify-between items-center">
@@ -202,7 +202,7 @@
                     <div class="lg:flex justify-between">
                         <div class="flex">
                             <div><img src="./images/seat-gray.png" alt=""></div>
-                            <div><p> <span class="newLeft bg-primaryColor text-white px-2 rounded-lg" >40</span> available </p></div>
+                            <div><p> <span id="totalSeat" class="newLeft bg-primaryColor text-white px-2 rounded-lg" >40</span> available </p></div>
                         </div>
                         <div class="selected flex">
                             <div><img src="./images/seat-green-filled.png" alt=""></div>
@@ -261,18 +261,18 @@
                     <!-- Total -->
                     <div class="flex justify-between border-t-2 border-gray-500">
                       <h2 class="font-semibold text-xl">Total Price</h2>
-                      <p class="font-semibold text-xl" >BDT <span>1100</span></p>
+                      <p class="font-semibold text-xl" >BDT <span id="initialTaka">00</span></p>
                     </div>
 
                   <!-- coupon input -->
                     <div class="relative mt-5">
-                      <input type="text" class="bg-gray-300 py-3 px-5 rounded-lg w-full" name="" placeholder="Have any Coupon ? " id="">
-                      <button class="btn bg-primaryColor absolute right-0 py-2 px-4 font-semibold text-xl border-none" disabled >Apply</button>
+                      <input id="inputtext" type="text" class="bg-gray-300 py-3 px-5 rounded-lg w-full" name="" placeholder="Have any Coupon ? " id="">
+                      <button id="couponApply" class="btn bg-primaryColor absolute right-0 py-2 px-4 font-semibold text-xl border-none" disabled >Apply</button>
                     </div>
                   <!-- Grand Total -->
                     <div class="flex justify-between mt-2 border-gray-500">
                       <h2 class="font-semibold text-xl">Grand Total</h2>
-                      <p class="font-semibold text-xl" >BDT <span>1100</span></p>
+                      <p class="font-semibold text-xl" >BDT <span id="grandTotal" >00</span></p>
                     </div>
                   <!-- form -->
                     <div class="mt-4">
