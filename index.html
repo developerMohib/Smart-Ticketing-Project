@@ -112,7 +112,7 @@
             <h2 class="text-4xl font-bold text-center">Best offers for you</h2>
             <!-- coupon 15 -->
             <div class="lg:grid grid-cols-2 gap-5 mt-10">
-                <div class="flex px-10 items-center bg-[#ffbf0f] rounded-xl">
+                <div class="flex lg:px-10 items-center bg-[#ffbf0f] rounded-xl">
                     <div class="flex-1">
                         <h1 class="text-4xl font-bold" >15% OFF</h1>
                         <p class="text-xl font-semibold">on your next purchase</p>
@@ -125,7 +125,7 @@
                     </div>
                 </div>
                 <!-- coupon 20 -->
-                <div class="flex items-center px-10 bg-[#f78c9c] rounded-xl">
+                <div class="flex items-center lg:px-10 bg-[#f78c9c] rounded-xl">
                     <div class="flex-1">
                         <h1 class="text-4xl font-bold" >20% OFF </h1>
                         <p class="text-xl font-semibold">on your next purchase</p>
@@ -196,10 +196,10 @@
     
       <section id="tickets">
         <div class="container">
-            <div class="grid grid-cols-7 justify-center items-center gap-10">
-                <div class="col-span-4">
+            <div class="lg:grid grid-cols-7 gap-10 ">
+                <div class="col-span-4 border-r-2 border-gray-400 border-dashed lg:px-10">
                     <h2 class="text-2xl font-bold">Select Your Seat</h2>
-                    <div class="flex justify-between">
+                    <div class="lg:flex justify-between">
                         <div class="flex">
                             <div><img src="./images/seat-gray.png" alt=""></div>
                             <div><p>available </p></div>
@@ -210,27 +210,51 @@
                         </div>
                     </div>
 
-                    <div class="flex justify-end "> <img class="bg-[#d2d4d7] px-10 py-3 rounded-lg " src="./images/wheel.png" alt=""> </div>
+                    <div class="flex justify-end "> <img class="bg-[#d2d4d7] lg:px-10 py-3 rounded-lg " src="./images/wheel.png" alt=""> </div>
 
                     <!-- Bus Seat choicing -->
-                    <div  class="flex items-center justify-between mt-5 ">
+                    <div  class="flex items-center justify-between my-5 ">
                       <p>A</p>
-                      <button class="btn px-10 font-semibold text-xl bus-seat bg-gray-400">A1</button>
-                      <button class="btn px-10 font-semibold text-xl bus-seat bg-gray-400">A2</button>
-                      <button class="btn px-10 font-semibold text-xl bus-seat bg-gray-400">A3</button>
-                      <button class="btn px-10 font-semibold text-xl bus-seat bg-gray-400">A4</button>
+                      <button class="btn lg:px-10 font-semibold text-xl bus-seat bg-gray-400">A1</button>
+                      <button class="btn lg:px-10 font-semibold text-xl bus-seat bg-gray-400">A2</button>
+                      <button class="btn lg:px-10 font-semibold text-xl bus-seat bg-gray-400">A3</button>
+                      <button class="btn lg:px-10 font-semibold text-xl bus-seat bg-gray-400">A4</button>
+                    </div>
+
+                    <div  class="flex items-center justify-between my-5 ">
+                      <p>A</p>
+                      <button class="btn lg:px-10 font-semibold text-xl bus-seat bg-gray-400">A1</button>
+                      <button class="btn lg:px-10 font-semibold text-xl bus-seat bg-gray-400">A2</button>
+                      <button class="btn lg:px-10 font-semibold text-xl bus-seat bg-gray-400">A3</button>
+                      <button class="btn lg:px-10 font-semibold text-xl bus-seat bg-gray-400">A4</button>
+                    </div>
+                    
+                    <div  class="flex items-center justify-between my-5 ">
+                      <p>A</p>
+                      <button class="btn lg:px-10 font-semibold text-xl bus-seat bg-gray-400">A1</button>
+                      <button class="btn lg:px-10 font-semibold text-xl bus-seat bg-gray-400">A2</button>
+                      <button class="btn lg:px-10 font-semibold text-xl bus-seat bg-gray-400">A3</button>
+                      <button class="btn lg:px-10 font-semibold text-xl bus-seat bg-gray-400">A4</button>
+                    </div>
+                    
+                    <div  class="flex items-center justify-between my-5 ">
+                      <p>A</p>
+                      <button class="btn lg:px-10 font-semibold text-xl bus-seat bg-gray-400">A1</button>
+                      <button class="btn lg:px-10 font-semibold text-xl bus-seat bg-gray-400">A2</button>
+                      <button class="btn lg:px-10 font-semibold text-xl bus-seat bg-gray-400">A3</button>
+                      <button class="btn lg:px-10 font-semibold text-xl bus-seat bg-gray-400">A4</button>
                     </div>
 
                 </div>
     
-                <div class="col-span-3">
+                <div class="col-span-3 px-2">
                     <h2 class="text-2xl font-bold">Select Your Seat</h2>
-                    <div class="flex justify-between">
+                    <div class="flex justify-between mt-10">
                         <p class="text-xl font-semibold">Seat <sup>1</sup> </p>
                         <p class="text-xl font-semibold">Class</p>
                         <p class="text-xl font-semibold">Price</p>
                     </div>
-                    <div class="flex justify-between">
+                    <div class="flex justify-between mt-5">
                       <p class="text-xl font-semibold">Seat 1</p>
                       <p class="text-xl font-semibold">Class 1</p>
                       <p class="text-xl font-semibold">Price 1</p>
@@ -239,6 +263,41 @@
                   <div class="flex justify-between border-t-2 border-gray-500">
                     <h2 class="font-semibold text-xl">Total Price</h2>
                     <p class="font-semibold text-xl" >BDT <span>1100</span></p>
+                  </div>
+
+                  <!-- coupon input -->
+                  <div class="relative mt-5">
+                    <input type="text" class="bg-gray-300 py-3 px-5 rounded-lg w-full" name="" placeholder="Have any Coupon ? " id="">
+                    <button class="btn bg-primaryColor absolute right-0 py-2 px-4 font-semibold text-xl border-none" disabled >Apply</button>
+                  </div>
+                  <!-- Grand Total -->
+                  <div class="flex justify-between mt-2 border-gray-500">
+                    <h2 class="font-semibold text-xl">Grand Total</h2>
+                    <p class="font-semibold text-xl" >BDT <span>1100</span></p>
+                  </div>
+                  <!-- form -->
+                  <div class="mt-4">
+                    <div>
+                      <label for="name" class=" w-full font-semibold text-xl">Passenger Name</label>
+                      <!-- Name update koris sundor hobe -->
+                      <input class="w-full my-2 p-2 bg-gray-300 rounded-lg" type="text" name="name" id="" placeholder="Passenger Name ">
+                    </div>
+                    
+                    <div>
+                      <label for="number" class="w-full font-semibold text-xl">Passenger Mobile Number </label>
+                      <!-- Name update koris sundor hobe -->
+                      <input class="w-full my-2 p-2 bg-gray-300 rounded-lg" type="number" name="number" id="" placeholder="Passenger Mobile Number ">
+                    </div>
+                    
+                    <div>
+                      <label for="email" class="w-full font-semibold text-xl">Email ID </label>
+                      <!-- Name update koris sundor hobe -->
+                      <input class="w-full my-2 p-2 bg-gray-300 rounded-lg" type="email" name="email" id="" placeholder="Email">
+                    </div>
+                    <div>
+                      <input class="btn bg-primaryColor w-full" disabled type="submit" value="Next">
+                    </div>
+
                   </div>
 
                 </div>
@@ -251,7 +310,7 @@
 
 
     <!-- footer section -->
-    <footer class="footer p-10 bg-[#030712] text-neutral-content justify-between">
+    <footer class="footer mt-20 p-10 bg-[#030712] text-neutral-content justify-between">
         <aside>
             <h1 class="font-bold text-5xl">Biman Paribahan</h1>
           <p>P-Ticket is a digital platform to make your <br>
