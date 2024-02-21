@@ -3,21 +3,29 @@ let maximumSeletct = 4;
 
 // 0 select seat 
 let initialSelectNumber = document.getElementById('initialSelect');
-let initialSelectText = initialSelectNumber.innerText;
-let initialSelect = parseInt(initialSelectText);
-
 
 //  40 seat find
 let totalSeatTextNumber = document.getElementById('totalSeat');
-let totalSeatText = totalSeatTextNumber.innerText;
-let totalSeat = parseInt(totalSeatText);
 
 //  initialTaka 00
 let initialTaka = document.getElementById('initialTaka') ;
-let totalTakaText = initialTaka.innerText;
-let totalTaka = parseInt(totalTakaText);
+
 let grandTotal = document.getElementById('grandTotal');
-console.log(totalTaka);
+// console.log(totalTaka);
+
+function elementConverter(elementId){
+    let element = document.getElementById(elementId);
+    let elementText = element.innerText;
+    let elementNumber = parseInt(elementText);
+    return elementNumber;
+
+}
+
+let elementNumber = elementConverter('initialSelect');
+let totalSeatNumber = elementConverter('totalSeat');
+let totalTaka = elementConverter('initialTaka');
+
+
 
 // coupon button 
 let couponButton = document.getElementById('couponApply');
@@ -52,23 +60,24 @@ for (const singleButton of allButton) {
         seatContainer.appendChild(div);
         
 
-        if(initialSelect < maximumSeletct){
+        if( elementNumber < maximumSeletct){
             
             // color change and count Number 
             singleButton.style.backgroundColor = 'green';
-            initialSelect++;
-            totalSeat--;
+            elementNumber++;
+            totalSeatNumber--;
 
             // change the number 
-            initialSelectNumber.innerText = initialSelect;
-            totalSeatTextNumber.innerText = totalSeat;
+            // element.innerText = elementNumber;
+            initialSelectNumber.innerText = elementNumber;
+            totalSeatTextNumber.innerText = elementNumber;
 
             // caltulate taka
-            let withoutOff = initialSelect * 550 ;
+            let withoutOff = elementNumber * 550 ;
             initialTaka.innerText = withoutOff;
 
             // discont offer 
-            if(initialSelect === maximumSeletct){
+            if(elementNumber === maximumSeletct){
                 singleButton.setAttribute("disabled", "");
                 couponButton.removeAttribute('disabled');
                 if(inputText === 'NEW15'){
