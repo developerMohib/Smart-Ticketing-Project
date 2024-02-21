@@ -156,7 +156,7 @@
                 <div class="busName col-span-3">
                     <div class="name-seat lg:flex justify-between items-center">
                         <h1 class="text-3xl font-bold">Biman Paribahan</h1>
-                        <p class="bg-[#1cd1003d] text-primaryColor font-bold border border-primaryColor rounded-xl p-2"> <span>40</span> Seat left </p> 
+                        <p class="bg-[#1cd1003d] text-primaryColor font-bold border border-primaryColor rounded-xl p-2"> <span class="newLeft" >40</span> Seat left </p> 
                     </div>
     
                     <div class="route-place lg:px-0 px-2 flex justify-between items-center">
@@ -202,11 +202,11 @@
                     <div class="lg:flex justify-between">
                         <div class="flex">
                             <div><img src="./images/seat-gray.png" alt=""></div>
-                            <div><p>available </p></div>
+                            <div><p> <span class="newLeft bg-primaryColor text-white px-2 rounded-lg" >40</span> available </p></div>
                         </div>
                         <div class="selected flex">
                             <div><img src="./images/seat-green-filled.png" alt=""></div>
-                            <div><p> selected </p></div>
+                            <div><p> <span class="bg-primaryColor text-white px-2 rounded-lg newAdded" >0</span>  selected </p></div>
                         </div>
                     </div>
 
@@ -222,90 +222,87 @@
                     </div>
 
                     <div  class="flex items-center justify-between my-5 ">
-                      <p>A</p>
-                      <button class="btn lg:px-10 font-semibold text-xl bus-seat bg-gray-400">A1</button>
-                      <button class="btn lg:px-10 font-semibold text-xl bus-seat bg-gray-400">A2</button>
-                      <button class="btn lg:px-10 font-semibold text-xl bus-seat bg-gray-400">A3</button>
-                      <button class="btn lg:px-10 font-semibold text-xl bus-seat bg-gray-400">A4</button>
+                      <p>B</p>
+                      <button class="btn lg:px-10 font-semibold text-xl bus-seat bg-gray-400">B1</button>
+                      <button class="btn lg:px-10 font-semibold text-xl bus-seat bg-gray-400">B2</button>
+                      <button class="btn lg:px-10 font-semibold text-xl bus-seat bg-gray-400">B3</button>
+                      <button class="btn lg:px-10 font-semibold text-xl bus-seat bg-gray-400">B4</button>
                     </div>
                     
                     <div  class="flex items-center justify-between my-5 ">
-                      <p>A</p>
-                      <button class="btn lg:px-10 font-semibold text-xl bus-seat bg-gray-400">A1</button>
-                      <button class="btn lg:px-10 font-semibold text-xl bus-seat bg-gray-400">A2</button>
-                      <button class="btn lg:px-10 font-semibold text-xl bus-seat bg-gray-400">A3</button>
-                      <button class="btn lg:px-10 font-semibold text-xl bus-seat bg-gray-400">A4</button>
+                      <p>C</p>
+                      <button class="btn lg:px-10 font-semibold text-xl bus-seat bg-gray-400">C1</button>
+                      <button class="btn lg:px-10 font-semibold text-xl bus-seat bg-gray-400">C2</button>
+                      <button class="btn lg:px-10 font-semibold text-xl bus-seat bg-gray-400">C3</button>
+                      <button class="btn lg:px-10 font-semibold text-xl bus-seat bg-gray-400">C4</button>
                     </div>
                     
                     <div  class="flex items-center justify-between my-5 ">
-                      <p>A</p>
-                      <button class="btn lg:px-10 font-semibold text-xl bus-seat bg-gray-400">A1</button>
-                      <button class="btn lg:px-10 font-semibold text-xl bus-seat bg-gray-400">A2</button>
-                      <button class="btn lg:px-10 font-semibold text-xl bus-seat bg-gray-400">A3</button>
-                      <button class="btn lg:px-10 font-semibold text-xl bus-seat bg-gray-400">A4</button>
+                      <p>D</p>
+                      <button class="btn lg:px-10 font-semibold text-xl bus-seat bg-gray-400">D1</button>
+                      <button class="btn lg:px-10 font-semibold text-xl bus-seat bg-gray-400">D2</button>
+                      <button class="btn lg:px-10 font-semibold text-xl bus-seat bg-gray-400">D3</button>
+                      <button class="btn lg:px-10 font-semibold text-xl bus-seat bg-gray-400">D4</button>
                     </div>
-
                 </div>
     
                 <div class="col-span-3 px-2">
                     <h2 class="text-2xl font-bold">Select Your Seat</h2>
                     <div class="flex justify-between mt-10">
-                        <p class="text-xl font-semibold">Seat <sup>1</sup> </p>
+                        <p class="text-xl font-semibold">Seat <sup  id="initialSelect" class="bg-primaryColor text-white px-2 rounded-lg newAdded">0</sup> </p>
                         <p class="text-xl font-semibold">Class</p>
                         <p class="text-xl font-semibold">Price</p>
                     </div>
-                    <div class="flex justify-between mt-5">
-                      <p class="text-xl font-semibold">Seat 1</p>
-                      <p class="text-xl font-semibold">Class 1</p>
-                      <p class="text-xl font-semibold">Price 1</p>
-                  </div>
-                  <!-- Total -->
-                  <div class="flex justify-between border-t-2 border-gray-500">
-                    <h2 class="font-semibold text-xl">Total Price</h2>
-                    <p class="font-semibold text-xl" >BDT <span>1100</span></p>
-                  </div>
+                    <div id="seatNumberAdd" class="  mt-5">
+                    
+                      <!-- dynamically added -->
+
+                    </div>
+                    <!-- Total -->
+                    <div class="flex justify-between border-t-2 border-gray-500">
+                      <h2 class="font-semibold text-xl">Total Price</h2>
+                      <p class="font-semibold text-xl" >BDT <span>1100</span></p>
+                    </div>
 
                   <!-- coupon input -->
-                  <div class="relative mt-5">
-                    <input type="text" class="bg-gray-300 py-3 px-5 rounded-lg w-full" name="" placeholder="Have any Coupon ? " id="">
-                    <button class="btn bg-primaryColor absolute right-0 py-2 px-4 font-semibold text-xl border-none" disabled >Apply</button>
-                  </div>
+                    <div class="relative mt-5">
+                      <input type="text" class="bg-gray-300 py-3 px-5 rounded-lg w-full" name="" placeholder="Have any Coupon ? " id="">
+                      <button class="btn bg-primaryColor absolute right-0 py-2 px-4 font-semibold text-xl border-none" disabled >Apply</button>
+                    </div>
                   <!-- Grand Total -->
-                  <div class="flex justify-between mt-2 border-gray-500">
-                    <h2 class="font-semibold text-xl">Grand Total</h2>
-                    <p class="font-semibold text-xl" >BDT <span>1100</span></p>
-                  </div>
+                    <div class="flex justify-between mt-2 border-gray-500">
+                      <h2 class="font-semibold text-xl">Grand Total</h2>
+                      <p class="font-semibold text-xl" >BDT <span>1100</span></p>
+                    </div>
                   <!-- form -->
-                  <div class="mt-4">
-                    <div>
-                      <label for="name" class=" w-full font-semibold text-xl">Passenger Name</label>
-                      <!-- Name update koris sundor hobe -->
-                      <input class="w-full my-2 p-2 bg-gray-300 rounded-lg" type="text" name="name" id="" placeholder="Passenger Name ">
-                    </div>
-                    
-                    <div>
-                      <label for="number" class="w-full font-semibold text-xl">Passenger Mobile Number </label>
-                      <!-- Name update koris sundor hobe -->
-                      <input class="w-full my-2 p-2 bg-gray-300 rounded-lg" type="number" name="number" id="" placeholder="Passenger Mobile Number ">
-                    </div>
-                    
-                    <div>
-                      <label for="email" class="w-full font-semibold text-xl">Email ID </label>
-                      <!-- Name update koris sundor hobe -->
-                      <input class="w-full my-2 p-2 bg-gray-300 rounded-lg" type="email" name="email" id="" placeholder="Email">
-                    </div>
-                    <div>
-                      <input class="btn bg-primaryColor w-full" disabled type="submit" value="Next">
-                    </div>
+                    <div class="mt-4">
+                      <div>
+                        <label for="name" class=" w-full font-semibold text-xl">Passenger Name</label>
+                        <!-- Name update koris sundor hobe -->
+                        <input class="w-full my-2 p-2 bg-gray-300 rounded-lg" type="text" name="name" id="" placeholder="Passenger Name ">
+                      </div>
+                      
+                      <div>
+                        <label for="number" class="w-full font-semibold text-xl">Passenger Mobile Number </label>
+                        <!-- Name update koris sundor hobe -->
+                        <input class="w-full my-2 p-2 bg-gray-300 rounded-lg" type="number" name="number" id="" placeholder="Passenger Mobile Number ">
+                      </div>
+                      
+                      <div>
+                        <label for="email" class="w-full font-semibold text-xl">Email ID </label>
+                        <!-- Name update koris sundor hobe -->
+                        <input class="w-full my-2 p-2 bg-gray-300 rounded-lg" type="email" name="email" id="" placeholder="Email">
+                      </div>
+                      <div>
+                        <input class="btn bg-primaryColor w-full" disabled type="submit" value="Next">
+                      </div>
 
-                  </div>
+                    </div>
 
                 </div>
             </div>
         </div>
     </section>
-  
-    
     </main>
 
 
