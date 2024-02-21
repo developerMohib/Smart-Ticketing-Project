@@ -11,3 +11,12 @@
 li a {
     font-size: 18px;
 }
+
+@media screen and (max-width:400px) {
+    .chutoDisplayNoneHbe{
+        display: none;
+    }   
+    .middleHobi{
+        text-align: center;
+    }
+}
