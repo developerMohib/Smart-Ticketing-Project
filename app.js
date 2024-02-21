@@ -11,7 +11,25 @@ let totalSeatTextNumber = document.getElementById('totalSeat');
 let initialTaka = document.getElementById('initialTaka') ;
 
 let grandTotal = document.getElementById('grandTotal');
-// console.log(totalTaka);
+
+// coupon button 
+let couponButton = document.getElementById('couponApply');
+
+// bus button or seat
+let allButton = document.getElementsByClassName('bus-seat');
+
+// next button
+let nextButton = document.getElementById('nextButton');
+
+
+// input text
+// let givenInput = document.getElementById('inputtext').addEventListener('keyup', function(event) {
+//     let inputtext = event.target.value;
+//     console.log(inputtext);
+// });
+// let inputText = givenInput.value;
+// console.log(inputText);
+
 
 function elementConverter(elementId){
     let element = document.getElementById(elementId);
@@ -24,19 +42,6 @@ function elementConverter(elementId){
 let elementNumber = elementConverter('initialSelect');
 let totalSeatNumber = elementConverter('totalSeat');
 let totalTaka = elementConverter('initialTaka');
-
-
-
-// coupon button 
-let couponButton = document.getElementById('couponApply');
-
-// bus button or seat
-let allButton = document.getElementsByClassName('bus-seat');
-
-// input text 
-
-let inputText = document.getElementById('inputtext').value ;
-
 
 for (const singleButton of allButton) {
     // console.log(singleButton);
@@ -68,9 +73,8 @@ for (const singleButton of allButton) {
             totalSeatNumber--;
 
             // change the number 
-            // element.innerText = elementNumber;
             initialSelectNumber.innerText = elementNumber;
-            totalSeatTextNumber.innerText = elementNumber;
+            totalSeatTextNumber.innerText = totalSeatNumber;
 
             // caltulate taka
             let withoutOff = elementNumber * 550 ;
@@ -80,20 +84,35 @@ for (const singleButton of allButton) {
             if(elementNumber === maximumSeletct){
                 singleButton.setAttribute("disabled", "");
                 couponButton.removeAttribute('disabled');
-                if(inputText === 'NEW15'){
+                
+                couponButton.addEventListener('click', function(e){
+                    let inputText = document.getElementById('inputtext').value ;
+                    console.log(inputText, 'input');
+                    if(inputText === 'NEW15'){
                     // 15% discount
-                    let off15 = withoutOff * 0.15;
-                    initialTaka.innerText = off15;
-                    grandTotal.classList.add('hidden');
-                }
-                else if(inputText === 'COUPLE20' ){
-                    //20% discount
-                    let off20 = withoutOff * 0.20;
-                    grandTotal.innerText = off20;
-                }
-                else{
-                    alert('apni ki coupon chuke na dekhe ascen.')
-                }
+                        let off15 = withoutOff * 0.15;
+                        grandTotal.innerText = off15;
+
+                        let afterDiscount = document.getElementById("afterDiscount");
+                        afterDiscount.innerText = withoutOff - off15;
+                        // grandTotal.classList.add('hidden');
+                        couponButton.setAttribute("disabled", "");
+                    }
+                    else if(inputText === 'COUPLE20' ){
+                        //20% discount
+                        let off20 = withoutOff * 0.20;
+                        console.log(off20 , '20% off')
+                        grandTotal.innerText = off20;
+
+                        let afterDiscount = document.getElementById("afterDiscount");
+                        afterDiscount.innerText = withoutOff - off20;
+                        couponButton.setAttribute("disabled", "");
+                    }
+                    else{
+                        alert('apni ki coupon chuke na dekhe ascen.')
+                    }
+                })
+
             }
 
             // append child

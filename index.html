@@ -120,7 +120,7 @@
                     </div>
                     <div> <img src="./images/cupon-devider.png" alt=""> </div>
                     <div class="">
-                        <h1 class="text-4xl font-bold" >15% OFF</h1>
+                        <h1 class="text-4xl font-bold" >NEW15</h1>
                         <p class="text-sm ">Coupon Code</p>
                     </div>
                 </div>
@@ -133,7 +133,7 @@
                     </div>
                     <div class="sm:hidden"> <img src="./images/cupon-devider.png" alt=""> </div>
                     <div class="">
-                        <h1 class="text-4xl font-bold" >Couple 20</h1>
+                        <h1 class="text-4xl font-bold" >COUPLE20</h1>
                         <p class="text-sm ">Coupon Code</p>
                     </div>
                 </div>
@@ -271,8 +271,13 @@
                     </div>
                   <!-- Grand Total -->
                     <div class="flex justify-between mt-2 border-gray-500">
-                      <h2 class="font-semibold text-xl">Grand Total</h2>
+                      <h2 class="font-semibold text-xl">Discount</h2>
                       <p class="font-semibold text-xl" >BDT <span id="grandTotal" >00</span></p>
+                    </div>
+                    
+                    <div class="flex justify-between mt-2 border-gray-500">
+                      <h2 class="font-semibold text-xl">Total After Discount</h2>
+                      <p class="font-semibold text-xl" >BDT <span id="afterDiscount" >00</span></p>
                     </div>
                   <!-- form -->
                     <div class="mt-4">
@@ -285,16 +290,16 @@
                       <div>
                         <label for="number" class="w-full font-semibold text-xl">Passenger Mobile Number </label>
                         <!-- Name update koris sundor hobe -->
-                        <input class="w-full my-2 p-2 bg-gray-300 rounded-lg" type="number" name="number" id="" placeholder="Passenger Mobile Number ">
+                        <input id="inputName" class="w-full my-2 p-2 bg-gray-300 rounded-lg" type="number" name="number" placeholder="Mobile : +8801706439736">
                       </div>
                       
                       <div>
-                        <label for="email" class="w-full font-semibold text-xl">Email ID </label>
+                        <label id="inputMobile" for="email" class="w-full font-semibold text-xl">Email ID </label>
                         <!-- Name update koris sundor hobe -->
                         <input class="w-full my-2 p-2 bg-gray-300 rounded-lg" type="email" name="email" id="" placeholder="Email">
                       </div>
                       <div>
-                        <input class="btn bg-primaryColor w-full" disabled type="submit" value="Next">
+                        <input id="nextButton" class="btn bg-primaryColor w-full" disabled type="submit" value="Next">
                       </div>
 
                     </div>
