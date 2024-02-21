@@ -11,10 +11,113 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- tailwind js -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'primaryColor': '#1dd100',
+                'secondaryColor' : '#030712',
+              }
+            }
+          }
+        }
+      </script>
     
 </head>
 <body>
-    <h1>Hellow world</h1>
+    
+    <header>
+        <div class="container">
+            <div class="navbar px-0 bg-base-100">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box lg:w-52 w-full">
+                      <li><a href=""> Home </a></li>
+                      <li><a href="">About</a></li>
+                      <li><a href="">Destination</a></li>
+                      <li><a href="">Search</a></li>
+                    </ul>
+                  </div>
+                  <a href="" class="text-xl lg:text-3xl font-bold">Biman Paribahan</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                      <li><a href=""> Home </a></li>
+                      <li><a href="">About</a></li>
+                      <li><a href="">Destination</a></li>
+                      <li><a href="">Search</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                  <a href="" class="btn border-2 border-primaryColor font-bold text-xl text-primaryColor ">Bus <span> <img src="./images/bus-icon.png" alt=""> </span> </a>
+                </div>
+              </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="Hero-Seciton">
+            <div class="container">
+                <!-- Banner Section -->
+                <div class="hero min-h-screen rounded-2xl" style="background-image: url(./images/banner.png);">
+                        <div class="hero-overlay rounded-2xl bg-opacity-60"></div>
+                    <div class="hero-content text-center text-neutral-content">
+                      <div class="lg:w-3/5">
+                        <h1 class="mb-5 lg:text-5xl text-2xl font-bold my-5">End-to-End Travel with <br> Biman Paribahan </h1>
+                        <p class="mb-5">Yes, you can run unit tests and view the results directly within the app. The
+                            integrated testing features allow for a streamlined .</p>
+                        <a href="" class="btn font-bold lg:text-2xl text-xl bg-primaryColor border-none lg:p-3 p-2 inline hover:bg-[#1cd100cc] " > Buy Tickets </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Card Section -->
+                  <div class="lg:grid grid-cols-3 gap-10 lg:w-4/5 mx-auto lg:relative -top-14 ">
+                    <!-- card 1 -->
+                    <div class="card card-side bg-base-100 shadow-xl border-b-2 border-primaryColor rounded-b-xl px-4 py-3">
+                        <figure><img src="./images/people.png" alt="people"/></figure>
+                        <div class="card-body">
+                          <h2 class="card-title font-bold text-3xl">500K+</h2>
+                          <p>Registerd Users</p>
+                        </div>
+                      </div>
+                      <!-- card 2 -->
+                      <div class="card card-side bg-base-100 shadow-xl border-b-2 border-primaryColor rounded-b-xl px-4 py-3">
+                          <figure><img src="./images/ticket-cupon.png" alt="people"/></figure>
+                          <div class="card-body">
+                            <h2 class="card-title font-bold text-3xl">1.7 lacks</h2>
+                            <p>Tickets sold</p>
+                          </div>
+                        </div>
+                        <!-- card 3 -->
+                        <div class="card card-side bg-base-100 shadow-xl border-b-2 border-primaryColor rounded-b-xl px-4 py-3">
+                            <figure><img src="./images/stoppage.png" alt="people"/></figure>
+                            <div class="card-body">
+                              <h2 class="card-title font-bold text-3xl">80K+</h2>
+                              <p>Rental partners</p>
+                            </div>
+                          </div>
+                  </div>
+            </div>
+        </section>
+
+        <section class="coupon">
+            <div class="container">
+                <h2 class="text-3xl font-bold text-center">Best offers for you</h2>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus veniam eligendi repellat culpa nobis temporibus corporis consequuntur ullam odit iste? Repellendus laudantium, cumque harum adipisci consequuntur officiis nisi delectus commodi! Quod, ipsam.</p>
+    </footer>
+
     <script src="./app.js"></script>
 </body>
 </html>
