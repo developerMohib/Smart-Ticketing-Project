@@ -125,6 +125,18 @@ for (const singleButton of allButton) {
             singleButton.setAttribute("disabled", "");
             alert('you cant select more এই তরে না কইছি গাড়ি খাইয়া গাজা চালাবি না ');
         }
+
+        let inputMobile = document.getElementById('inputName').value; 
+        let mobileNumber = parseInt(inputMobile);
+        console.log( typeof mobileNumber, 'input mobile')
+        //Next Button 
+        if(elementNumber > 0 && !isNaN(mobileNumber)){
+            nextButton.removeAttribute('disabled');
+        }
         
     })
+}
+
+function modal(){
+    
 }

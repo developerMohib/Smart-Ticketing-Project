@@ -299,7 +299,22 @@
                         <input class="w-full my-2 p-2 bg-gray-300 rounded-lg" type="email" name="email" id="" placeholder="Email">
                       </div>
                       <div>
-                        <input id="nextButton" class="btn bg-primaryColor w-full" disabled type="submit" value="Next">
+                        <input id="nextButton" onclick="modal()" class="btn bg-primaryColor w-full" for="my_modal_7" disabled type="submit" value="Next">
+
+                        <div id="modal">
+                          <!-- The button to open modal -->
+                          <!-- <label for="my_modal_7" class="btn">open modal</label> -->
+
+                          <!-- Put this part before </body> tag -->
+                          <input type="checkbox" id="my_modal_7" class="modal-toggle" />
+                          <div class="modal" role="dialog">
+                            <div class="modal-box">
+                              <h3 class="text-lg font-bold">Hello!</h3>
+                              <p class="py-4">This modal works with a hidden checkbox!</p>
+                            </div>
+                            <label class="modal-backdrop" for="my_modal_7">Close</label>
+                          </div>
+                        </div>
                       </div>
 
                     </div>
